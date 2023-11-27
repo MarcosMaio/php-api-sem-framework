@@ -1,0 +1,47 @@
+### Login
+POST http://localhost/API-PHP/users/login HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+login=marcos26
+&password=mp2607
+
+###
+
+GET http://localhost/API-PHP/clients/list HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6Ik1hcmNvcyBNYWlvIiwiZXhwaXJlc19pbiI6MTcwMTE4Mjc1OX0.aQQOgRmbhQBZU25PldLj6AQ3ZDL4nK613QiYw_zuC7g
+
+###
+
+GET http://localhost/API-PHP/clients/list/2 HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6Ik1hcmNvcyBNYWlvIiwiZXhwaXJlc19pbiI6MTcwMTE4Mjc1OX0.aQQOgRmbhQBZU25PldLj6AQ3ZDL4nK613QiYw_zuC7g
+
+###
+
+POST http://localhost/API-PHP/clients/add HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6Ik1hcmNvcyBNYWlvIiwiZXhwaXJlc19pbiI6MTcwMTE4Mjc1OX0.aQQOgRmbhQBZU25PldLj6AQ3ZDL4nK613QiYw_zuC7g
+Content-Type: application/x-www-form-urlencoded
+
+&name=Marcos Maio
+&email=marcospaulomaio2607@gmail.com
+&city=Rio De Janeiro
+&state=Rj
+&phone=21965399177
+
+
+###
+POST http://localhost/API-PHP/clients/update/2 HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6Ik1hcmNvcyBNYWlvIiwiZXhwaXJlc19pbiI6MTcwMTE4Mjc1OX0.aQQOgRmbhQBZU25PldLj6AQ3ZDL4nK613QiYw_zuC7g
+Content-Type: application/x-www-form-urlencoded
+
+_method=PUT
+&name=Lua Maio
+&email=Lua@hotmail.com
+&phone=21982829761
+
+###
+
+POST http://localhost/API-PHP/clients/delete/2 HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6Ik1hcmNvcyBNYWlvIiwiZXhwaXJlc19pbiI6MTcwMTE4Mjc1OX0.aQQOgRmbhQBZU25PldLj6AQ3ZDL4nK613QiYw_zuC7g
+
+_method=DELETE
